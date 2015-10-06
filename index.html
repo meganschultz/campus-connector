@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>The Campus Connector Made Me Late</title>
+  <meta name="description" content="For when the fucking campus connector fucking makes you fucking late" />
+  <meta name="author" content="Megan" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <!-- 
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />--!>
+  
+  	<link rel="stylesheet" type="text/css" href="jqcss.css" /> 
+  	<link rel="stylesheet" href="selectric.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  
+  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="jquery.selectric.js"></script> 
+  	<script type="text/javascript" src="jqClock.min.js"></script>
+  	<script type="text/javascript">
+    $(document).ready(function(){
+      	$("#clock1").clock();                             
+        
+        $(function(){
+  			$('select').selectric();
+		});
+        
+		$("select[class='customLabel']").change(function() {
+         if($(this).val()==1){
+         	$("#box").show(100).html("<h2>Only 1 minute?! That's not even late.</h2>");}
+     
+         if($(this).val()==2){
+         	$("#box").show(100).html("<h2>Only 2? No sweat!</h2>");}
+         	
+         if($(this).val()==3){
+         	$("#box").show(100).html("<h2>3 minutes? Not too Shabby.</h2>");}
+         	
+         if($(this).val()==4){
+         	$("#box").show(100).html("<h2>4 minutes -- You're still in the save zone</h2>");} 
+         	
+         if($(this).val()==5){
+         	$("#box").show(100).html("<h2>5 minutes -- Just barely pushing it.</h2>");}
+         	
+         if($(this).val()==6){
+         	$("#box").show(100).html("<h2>6 minutes is the devil's doing.</h2>");}
+         	
+         if($(this).val()==7){
+         	$("#box").show(100).html("<h2>7 minutes? Not so lucky.</h2>");}
+         	
+         if($(this).val()==8){
+         	$("#box").show(100).html("<h2>8 is officially late.</h2>");} 
+         	
+         if($(this).val()==9){
+         	$("#box").show(100).html("<h2>9? Yeah that's annoying.</h2>");}
+         	
+         if($(this).val()==10){
+         	$("#box").show(100).html("<h2>So, like, what was the campus connector doing that whole 10 minutes?</h2>");}
+         	
+         if($(this).val()==11){
+         	$("#box").show(100).html("<h2>11 minutes just plain sucks.</h2>");}
+         	
+         if($(this).val()==12){
+         	$("#box").show(100).html("<h2>12 minutes = a dozen shakes of the head</h2>");} 
+         	
+         if($(this).val()==13){
+         	$("#box").show(100).html("<h2>13, now that's really unlucky.</h2>");}
+         	
+         if($(this).val()==14){
+         	$("#box").show(100).html("<h2>14 Campus Connector, GET YOUR SHIT TOGETHER!</h2>");}
+         	
+         if($(this).val()==15){
+         	$("#box").show(100).html("<h2>15 minutes is actually equivalent to $117.69 of your tuition money. Let that sink in.</h2>");}
+         	
+         if($(this).val()==16){
+         	$("#box").show(100).html("<h2>Definitely NOT sweet 16 when you're that late.</h2>");} 	
+       
+         if($(this).val()==17){
+         	$("#box").show(100).html("<h2>17 bottles of beer on the wall, 17 bottles of beer, take one down, chug it all cuz you're really fucking late.</h2>");}
+         	
+         if($(this).val()==18){
+         	$("#box").show(100).html("<h2>18 minutes? Yep, that's ridiculous.</h2>");}
+         	
+         if($(this).val()==19){
+         	$("#box").show(100).html("<h2>19 minutes! -- That's about 1% of your day! WASTED.</h2>");}
+         	
+         if($(this).val()==20){
+         	$("#box").show(100).html("<h2>Congratulations, the campus connector just cost you $156.92 of your tuition money.</h2>");} 	  	
+         	
+     	});
+		
+	});
+
+</script>	
+</head>
+
+<body>
+   <div>
+		<div style="clear:both;">
+   		<div id="clock1">This div will be turned into a dynamic clock</div>
+  		</div>
+  <div id="wrapper">
+  <div class="header">
+  <h1>The Campus Connector Made Me Late</h1>
+  </div>
+  <div class="center">
+     <select class="customLabel">
+      <option value="">How Late?</option>
+      <option value="1">1 minute</option>
+      <option value="2">2 minutes</option>
+      <option value="3">3 minutes</option>
+      <option value="4">4 minutes</option>
+      <option value="5">5 minutes</option>
+      <option value="6">6 minutes</option>
+      <option value="7">7 minutes</option>
+      <option value="8">8 minutes</option>
+      <option value="9">9 minutes</option>
+      <option value="10">10 minutes</option>
+      <option value="11">11 minutes</option>
+      <option value="12">12 minutes</option>
+      <option value="13">13 minutes</option>
+      <option value="14">14 minutes</option>
+      <option value="15">15 minutes</option>
+      <option value="16">16 minutes</option>
+      <option value="17">17 minutes</option>
+      <option value="18">18 minutes</option>
+      <option value="19">19 minutes</option>
+      <option value="20">20 minutes</option>
+    </select>
+    
+  <!--<div id="btn"> Submit </div>--!>
+
+<div id="box"> </div>
+</div>
+</div>	
+</body>
+  		
+
+</html>

@@ -1,0 +1,179 @@
+#wrapper{
+width: 100%;
+height: 100%;
+margin: auto;
+}
+
+body{
+  text-align: center;
+  padding-bottom: 20px;
+  background: url(header-01.png) no-repeat 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 800px;
+  color: #F0F0F0;
+  overflow: hidden;
+  }
+
+h2 {
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 140%;
+  font-style: italic;
+  padding: 30px;
+  text-shadow: 0 1px 1px #666;
+}
+
+h1, h3, h4 {
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h4 {
+  margin: -22px 0 22px;
+}
+
+h4 a {
+  color: #999;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #444;
+}
+
+.header h1 {
+  text-align: center;
+  text-shadow: 0 1px 1px #666;
+  letter-spacing: .5px;
+  font-size: 60px;
+  margin: 125px 0 50px;
+}
+
+#today {
+  color: #99203b; 
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic; 
+  letter-spacing: .5px; 
+  font-size: 12px; 
+  text-align: center;
+  top: 20px;
+  }
+
+.center{
+max-width: 260px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+/*#btn {
+  width: 100px;
+  background: #99203b;
+  background-image: -webkit-linear-gradient(top, #99203b, #a32f48);
+  background-image: -moz-linear-gradient(top, #99203b, #a32f48);
+  background-image: -ms-linear-gradient(top, #99203b, #a32f48);
+  background-image: -o-linear-gradient(top, #99203b, #a32f48);
+  background-image: linear-gradient(to bottom, #99203b, #a32f48);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #7a0019 2px;
+  text-decoration: none;
+  text-align:center;
+}
+
+#btn:hover {
+  background: #a32f48;
+  background-image: -webkit-linear-gradient(top, #a32f48, #99203b);
+  background-image: -moz-linear-gradient(top, #a32f48, #99203b);
+  background-image: -ms-linear-gradient(top, #a32f48, #99203b);
+  background-image: -o-linear-gradient(top, #a32f48, #99203b);
+  background-image: linear-gradient(to bottom, #a32f48, #99203b);
+  text-decoration: none;
+  cursor: hand;
+}
+
+#btn {
+  border: 4px solid #A32F48;
+  background: #99203B;
+  position: relative;
+  border-radius: 9px;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  font-family: "Ubuntu";
+  margin: 30px;
+  cursor: pointer;
+
+}
+#btn:label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 42px 0 53px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+  font-family: "Ubuntu";
+  line-height: 52px;
+  color: #EBEBEB;
+  height: 52px;
+  cursor: pointer;
+
+}
+*/
+
+#box{
+width: auto;
+min-width: 40%;
+height: auto;
+background: #EBEBEB;
+opacity: .7;
+color: #99203B;
+top: 500px;
+bottom: 30px;
+display: none;
+border-radius: 9px;
+right: 30%;
+
+
+
+}
+
+footer{
+height: 100%;
+margin-bottom: 5px;
+}
+
+
+
+
+  .jqclock {
+  text-align:center; 
+  padding: 5px; 
+  margin: 40px; 
+
+  }
+  
+  .clockdate {
+  color: #EBEBEB; 
+  font-family: "Ubuntu", sans-serif; 
+  letter-spacing: 2px; 
+  font-size: 14px; 
+  }
+  
+  .clocktime {
+  padding: 5px; 
+  color: #EBEBEB;
+  font-size: 14px; 
+  font-family: "Ubuntu", sans-serif; 
+  letter-spacing: 2px; 
+  margin-left: 20px;
+  }
+  
