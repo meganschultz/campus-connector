@@ -4,6 +4,13 @@ height: 100%;
 margin: auto;
 }
 
+#test {
+	width: 100px;
+	height: 100px;
+	background: red;
+	display: none;
+}
+
 body{
   text-align: center;
   padding-bottom: 20px;

@@ -8,7 +8,6 @@
   
   <meta name="description" content="For when the fucking campus connector fucking makes you fucking late" />
   <meta name="author" content="Megan" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 
   	<link rel="stylesheet" href="jqcss.css" /> 
   	<link rel="stylesheet" href="selectric.css"/>
@@ -18,7 +17,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="jquery.selectric.js"></script> 
   	<script type="text/javascript" src="jqClock.min.js"></script>
-  	<script type="text/javascript" src="jqClock.js"></script>
   	<script type="text/javascript">
     $(document).ready(function(){
       	$("#clock1").clock();                             
@@ -29,64 +27,84 @@
         
 		$("select[class='customLabel']").change(function() {
          if($(this).val()==1){
-         	$("#box").show(100).html("<h2>Only 1 minute?! That's not even late.</h2>");}
+         	document.getElementById("caption").innerHTML="Only 1 minute?! That's not even late."; 	
+         	}
      
          if($(this).val()==2){
-         	$("#box").show(100).html("<h2>Only 2? No sweat!</h2>");}
+        	document.getElementById("caption").innerHTML="Only 2? No sweat!";    	
+         	}
          	
          if($(this).val()==3){
-         	$("#box").show(100).html("<h2>3 minutes? Not too Shabby.</h2>");}
+        	document.getElementById("caption").innerHTML="3 minutes? Not too Shabby.";    	
+         	}
          	
          if($(this).val()==4){
-         	$("#box").show(100).html("<h2>4 minutes -- You're still in the save zone</h2>");} 
+         	document.getElementById("caption").innerHTML="4 minutes -- You're still in the save zone";    	
+         	}
          	
          if($(this).val()==5){
-         	$("#box").show(100).html("<h2>5 minutes -- Just barely pushing it.</h2>");}
+          	document.getElementById("caption").innerHTML="5 minutes -- Just barely pushing it.";   	
+         	}
          	
          if($(this).val()==6){
-         	$("#box").show(100).html("<h2>6 minutes is the devil's doing.</h2>");}
+          	document.getElementById("caption").innerHTML="6 minutes is the devil's doing.";	
+         	}
          	
          if($(this).val()==7){
-         	$("#box").show(100).html("<h2>7 minutes? Not so lucky.</h2>");}
+          	document.getElementById("caption").innerHTML="7 minutes? Not so lucky.";   	
+         	}
          	
          if($(this).val()==8){
-         	$("#box").show(100).html("<h2>8 is officially late.</h2>");} 
+          	document.getElementById("caption").innerHTML="8 is officially late.";   	
+         	}
          	
          if($(this).val()==9){
-         	$("#box").show(100).html("<h2>9? Yeah that's annoying.</h2>");}
+          	document.getElementById("caption").innerHTML="9? Yeah that's annoying.";  	
+         	}
          	
          if($(this).val()==10){
-         	$("#box").show(100).html("<h2>So, like, what was the campus connector doing that whole 10 minutes?</h2>");}
+          	document.getElementById("caption").innerHTML="So, like, what was the campus connector doing that whole 10 minutes?";  	
+         	}
          	
          if($(this).val()==11){
-         	$("#box").show(100).html("<h2>11 minutes just plain sucks.</h2>");}
+          	document.getElementById("caption").innerHTML="11 minutes just plain sucks."; 	
+         	}
          	
          if($(this).val()==12){
-         	$("#box").show(100).html("<h2>12 minutes = a dozen shakes of the head</h2>");} 
+          	document.getElementById("caption").innerHTML="12 minutes = a dozen shakes of the head"; 	
+         	}
          	
          if($(this).val()==13){
-         	$("#box").show(100).html("<h2>13, now that's really unlucky.</h2>");}
+          	document.getElementById("caption").innerHTML="13, now that's really unlucky.";    	
+         	}
          	
          if($(this).val()==14){
-         	$("#box").show(100).html("<h2>14 Campus Connector, GET YOUR SHIT TOGETHER!</h2>");}
-         	
+          	document.getElementById("caption").innerHTML="14 Campus Connector, GET YOUR SHIT TOGETHER!";   	
+         	}
+
          if($(this).val()==15){
-         	$("#box").show(100).html("<h2>15 minutes is actually equivalent to $117.69 of your tuition money. Let that sink in.</h2>");}
+          	document.getElementById("caption").innerHTML="15 minutes is actually equivalent to $117.69 of your tuition money. Let that sink in.";  	
+         	}
          	
          if($(this).val()==16){
-         	$("#box").show(100).html("<h2>Definitely NOT sweet 16 when you're that late.</h2>");} 	
+          	document.getElementById("caption").innerHTML="Definitely NOT sweet 16 when you're that late.";   	
+         	}
        
          if($(this).val()==17){
-         	$("#box").show(100).html("<h2>17 bottles of beer on the wall, 17 bottles of beer, take one down, chug it all cuz you're really fucking late.</h2>");}
+          	document.getElementById("caption").innerHTML="17 bottles of beer on the wall, 17 bottles of beer, take one down, chug it all cuz you're really fucking late.";      	
+         	}
          	
          if($(this).val()==18){
-         	$("#box").show(100).html("<h2>18 minutes? Yep, that's ridiculous.</h2>");}
+          	document.getElementById("caption").innerHTML="18 minutes? Yep, that's ridiculous.";     	
+         	}
          	
          if($(this).val()==19){
-         	$("#box").show(100).html("<h2>19 minutes! -- That's about 1% of your day! WASTED.</h2>");}
+          	document.getElementById("caption").innerHTML="19 minutes! -- That's about 1% of your day! WASTED.";    	
+         	}
          	
          if($(this).val()==20){
-         	$("#box").show(100).html("<h2>Congratulations, the campus connector just cost you $156.92 of your tuition money.</h2>");} 	  	
+          	document.getElementById("caption").innerHTML="Congratulations, the campus connector just cost you $156.92 of your tuition money.";     	
+         	}
          	
      	});
 		
@@ -97,6 +115,7 @@
 
 <body>
    <div>
+   		<div id="test"></div>
 		<div style="clear:both;">
    		<div id="clock1">This div will be turned into a dynamic clock</div>
   		</div>
@@ -130,7 +149,10 @@
     </select>
     
 </div>
-</div>	
+</div>
+
+<h2 id="caption"></h2>
+	
 </body>
   		
 
